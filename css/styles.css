@@ -1,30 +1,53 @@
 row,
-body,
-hr {
+body {
   box-sizing: border-box;
   max-width: 100%;
   margin: 15px;
   padding: 1em;
 }
 
-[class*="zocial-"]:before {
-  color: black;
-  display: inline-block;
-  font-family: 'zocial', sans-serif;
-  text-shadow: 3px 3px 3px #aaa;
-  width: 2em;
+.social-btn {
+  padding: 2px 5px 2px 4px;
+  height: 30px;
+  color: #333;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 3px;
+  float: right;
+  background-color: #eee;
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fcfcfc),color-stop(100%,#eee));
+  background-image: -webkit-linear-gradient(top,#fcfcfc 0,#eee 100%);
+  background-image: -moz-linear-gradient(top,#fcfcfc 0,#eee 100%);
+  background-image: -ms-linear-gradient(top,#fcfcfc 0,#eee 100%);
+  background-image: -o-linear-gradient(top,#fcfcfc 0,#eee 100%);
+  background-image: linear-gradient(to bottom,#fcfcfc 0,#eee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#eeeeee', GradientType=0);
+  background-repeat: no-repeat;
+  border: 1px solid #d5d5d5;
 }
 
-a:hover [class*="zocial-"]:before {
-  color: #3d85c6;
+a.social-btn {
+  text-transform: none;
+  font-size: 14px;
 }
-
-.social a {
-  margin: 0 15px 0 0;
+.social-btn:focus, .social-btn:hover {
+    text-decoration: none;
+    background-color: #ddd;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#eee),color-stop(100%,#ddd));
+    background-image: -webkit-linear-gradient(top,#eee 0,#ddd 100%);
+    background-image: -moz-linear-gradient(top,#eee 0,#ddd 100%);
+    background-image: -ms-linear-gradient(top,#eee 0,#ddd 100%);
+    background-image: -o-linear-gradient(top,#eee 0,#ddd 100%);
+    background-image: linear-gradient(to bottom,#eee 0,#ddd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#dddddd', GradientType=0);
+    border-color: #ccc;
 }
-
-.social {
-  margin-left: 1em;
+.skype-btn p,
+.skype-btn img {
+    margin: 0 !important;
+    vertical-align: 0 !important;
 }
 
 .text-muted {
@@ -46,13 +69,15 @@ a:hover [class*="zocial-"]:before {
 .white {
   color: white;
 }
-
+.orange {
+  color: orange;
+}
 h1 {
   font-family: 'Lato', sans-serif;
   color: #bcbbbb;
   font-weight: 500;
   font-size: 40px;
-  text-transform: uppercase;
+  margin: 0 auto;
 }
 
 h3,
@@ -70,9 +95,8 @@ h4 {
 hr {
   margin-top: 1px;
   margin-bottom: 5px;
-  margin-left: 15px;
   border: 0;
-  border-top: 3px solid #bcbbbb;
+  border-top: 1px solid #bcbbbb;
 }
 
 figure {
@@ -115,7 +139,7 @@ figcaption {
   opacity: 0;
   position: absolute;
   top: 5%;
-  width: 100%;
+  width: 90%;
   -webkit-transition: All 0.5s ease;
   -moz-transition: All 0.5s ease;
   -o-transition: All 0.5s ease;
@@ -125,7 +149,19 @@ figcaption {
   zoom: 1;
   text-align: center;
   margin: 0 0 12px;
+  letter-spacing: 1px;
 /*  line-height: 100%;*/
+}
+
+li {
+    text-align: justify;
+    list-style: none;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+ul li:last-child{
+    margin-right: 0;
 }
 
 img,
