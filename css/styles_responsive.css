@@ -1,0 +1,73 @@
+ /*
+* These are the responsive styles. 
+*/
+       
+/* For small screens such as mobile phones*/
+
+@media screen and (max-width: 400px) {
+  .header-logo {
+    display: none;
+  }
+    
+  .header-title, 
+  h1,
+  h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+    
+  .title-super {
+    font-size: 20px;
+    text-align: center;
+  }
+       
+  .social {
+    float: left;
+  }
+    
+  [class*="zocial-"]:before {
+    color: black;
+    font-family: 'zocial', sans-serif;
+    text-shadow: 1px 1px 1px #aaa;
+    width: 1.5em;
+  }
+    
+  hr {
+    display: none;
+  }
+}
+  
+/* For medium screens such as Ipad, Tablet, etc. */
+@media screen and (min-width: 401px) and (max-width: 992px){
+  .header-logo {
+    position: relative;
+    width: 33.33%;
+    float: left;
+  }
+  
+  .header-title {
+    position: relative;
+    width: 66.66%;
+    float: left;            
+  }
+        
+  h1 {
+    font-size: 30px;
+  }
+        
+  h3, 
+  .title-super {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+  }
+        
+  h4 {
+    font-size: 20px;
+  }
+    
+  .col-md-4 {
+    width: 33.33%;
+    float: left;
+  }
+}

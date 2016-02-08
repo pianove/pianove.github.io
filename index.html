@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>My Web Portfolio</title>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles_responsive.css">
+
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <div class="row">
+    <div class="header-logo col-md-3">
+       <img src="http://lorempixel.com/200/100/nature" alt="My logo" class="img-responsive">
+    </div>
+
+    <div class="header-title col-md-9 text-right text-uppercase">
+
+       <h1 class="text-thin"> Eniko Pianovszky</h1>
+       <h4>Front-End Traveling Yogi</h4>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12" id="social">
+       <a href="https://twitter.com" class="zocial-twitter">Twitter</a>
+       <a href="https://www.facebook.com" class="zocial-facebook">Facebook</a>
+       <a href="https://plus.google.com" class="zocial-googleplus">Google+</a>
+    </div>
+
+  <div class="row" id="line">
+    <div class="col-md-12">
+       <hr>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+        <div class="img-style">
+       <figure>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="images/Gueghard_1600.jpg" />
+            <source media="(min-width: 800px)" srcset="images/Gueghard_1000.jpg" />
+            <source media="(min-width: 500px)" srcset="images/Gueghard_800.jpg" />
+            <img src="images/Gueghard_small.jpg" alt="Brave Armenian women selling Armenian delights at Gueghard">
+          </picture>
+           <div class="bg-fill"></div>
+           <div class='img-info'>
+              <h1 class="text-thin white">Brave Women</h1>
+              <h3 class="text-thin white">Selling delights at Gueghard, Armenia</h3>
+           </div>
+          <figcaption>Armenian women selling delights at Gueghard</figcaption>
+       </figure>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+       <hr>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+       <h3 class="title-super text-muted ">Featured Work</h3>
+    </div>
+  </div>
+
+  <div class="row text-center ">
+
+    <div class="col-md-4">
+        <a href="#project1" name="modal" title="Click here to read what I learnt"><img src="http://lorempixel.com/555/300/sports" class="img-responsive" alt="My Resume" data-toggle="modal" data-target="#project1"/></a>
+       <h3>My First Web Site Project</h3>
+       <p><a href="https://github.com/pianove/frontend-nanodegree-resume.git">Link to project</a></p>
+    </div>
+
+    <div class="col-md-4">
+        <a href="#project2" name="modal" title="Click here to read what I learnt"><img src="http://lorempixel.com/555/300/sports" class="img-responsive" alt="My Featured Work 2" data-toggle="modal" data-target="#project2"/></a>
+       <h3>My Second Web Site Project</h3>
+       <p><a href="http://github.com">Link to project</a></p>
+    </div>
+
+
+    <div class="col-md-4">
+        <a href="#project3" name="modal" title="Click here to read what I learnt"><img src="http://lorempixel.com/555/300/sports" class="img-responsive" alt="My Featured Work 3" data-toggle="modal" data-target="#project3"/></a>
+       <h3>My Third Web Site Project</h3>
+       <p><a href="http://github.com">Link to project</a></p>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+       <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel1">My First Web Site Project</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://lorempixel.com/555/300/sports" alt="My Featured Work 1">My first project taught me how to create responsive web site that looks great on whatever screen size (viewport) you are browsing it. Also, I learnt some basics in javaScript that makes a website much more interactive and animated. I still spend my time to fix bugs due to typo and missing brackets, quotes...Css is getting better and chrome dev tool is very handy to play around with styles and emulate devices. I am looking forward to learn more!            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+       </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+       <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel2">My Second Web Site Project</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://lorempixel.com/555/300/sports" alt="My Featured Work 2"> I am keen to learn more .....
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+       </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+       <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel3">My Third Web Site Project</h4>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="http://lorempixel.com/555/300/sports" alt="My Featured Work 3">
+       Happy to share with others as I am getting closer to the lights at the end of the tunnel...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+       </div>
+    </div>
+  </div>
+
+</body>
+</html>
