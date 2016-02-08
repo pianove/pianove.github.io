@@ -28,6 +28,10 @@ body {
   border: 1px solid #d5d5d5;
 }
 
+.fa {
+  margin-right: 5px;
+}
+
 a.social-btn {
   text-transform: none;
   font-size: 14px;
