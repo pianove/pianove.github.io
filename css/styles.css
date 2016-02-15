@@ -3,30 +3,47 @@ body {
   box-sizing: border-box;
   max-width: 100%;
   margin: 15px;
-  padding: 1em;
+  color: #333333;
+  font-family: 'Lato', sans-serif;
+}
+
+a, a:hover, a:active, a:focus {
+    outline: none;
+    color: orange;
+    text-decoration: none;
+}
+
+a{
+    color: orange;
+}
+.header{
+    margin: 15px;
+}
+.header img {
+    max-width: 33.3333%;
+    display: inline-block;
+}
+
+.header a {
+    float: right;
+}
+.header p {
+    margin: 32px 0px;
+    font-size: 24px;
 }
 
 .social-btn {
-  padding: 2px 5px 2px 4px;
+  padding: 4px 5px 2px 5px;
   height: 30px;
+  width: 95px;
+  text-align: center;
   color: #333;
   text-decoration: none;
-  text-shadow: 0 1px 0 #fff;
   white-space: nowrap;
   cursor: pointer;
   border-radius: 3px;
   float: right;
-  background-color: #eee;
-  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fcfcfc),color-stop(100%,#eee));
-  background-image: -webkit-linear-gradient(top,#fcfcfc 0,#eee 100%);
-  background-image: -moz-linear-gradient(top,#fcfcfc 0,#eee 100%);
-  background-image: -ms-linear-gradient(top,#fcfcfc 0,#eee 100%);
-  background-image: -o-linear-gradient(top,#fcfcfc 0,#eee 100%);
-  background-image: linear-gradient(to bottom,#fcfcfc 0,#eee 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#eeeeee', GradientType=0);
-  background-repeat: no-repeat;
-  border: 1px solid #d5d5d5;
-}
+ }
 
 .fa {
   margin-right: 5px;
@@ -47,11 +64,12 @@ a.social-btn {
     background-image: linear-gradient(to bottom,#eee 0,#ddd 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#dddddd', GradientType=0);
     border-color: #ccc;
+    color: black;
 }
 .skype-btn p,
 .skype-btn img {
-    margin: 0 !important;
-    vertical-align: 0 !important;
+    margin: 0 10px 0 10px !important;
+    vertical-align: -4px !important;
 }
 
 .text-muted {
@@ -87,7 +105,6 @@ h1 {
 h3,
 h4 {
   font-family: 'Lato', sans-serif;
-  color: orange;
 }
 
 .title-super {
@@ -97,8 +114,7 @@ h4 {
 }
 
 hr {
-  margin-top: 1px;
-  margin-bottom: 5px;
+  margin-top: 1em;
   border: 0;
   border-top: 1px solid #bcbbbb;
 }
@@ -161,12 +177,11 @@ li {
     text-align: justify;
     list-style: none;
     display: inline-block;
-    margin-right: 1em;
+    vertical-align: middle;
+    padding-top: 1em;
 }
 
-ul li:last-child{
-    margin-right: 0;
-}
+
 
 img,
 embed,
@@ -176,3 +191,82 @@ video {
 }
 
 /* Comments */
+
+.footer {
+    font-family: "Courier New", Courier, monospace;
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+}
+
+ul.card {
+    padding-left: 0px;
+    border-top: 1px solid black;
+    width: 97%;
+    margin: 0 10px 15px;
+}
+
+h4.contact-title {
+    text-align: left;
+    margin: 2em;
+    letter-spacing: 2px;
+    width: 60%;
+
+}
+
+img.contact-title {
+    padding-bottom: 0px;
+    color: orange;
+    display: block;
+    text-align: center;
+    margin: auto;
+    height: 70px;
+    padding-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Courier New", Courier, monospace;
+    border-bottom: 1px solid black;
+}
+
+img.card {
+    padding-bottom: 0px;
+    display: block;
+    margin-left: 1em;
+    width: 60%;
+    padding-top: 1em;
+}
+
+.contact.card {
+    border-radius: 15px;
+    box-shadow: lightgrey 1px 10px 10px 8px;
+/*
+    width: 52%;
+    max-width: 480px;
+*/
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+}
+
+.card {
+
+    font-size: 20px;
+    line-height: 19px;
+    background-color: white;
+}
+
+.end {
+    background-color: white;
+    height: 40px;
+}
+
+.text-left {
+    float: left;
+}
+
+.qrcode {
+    float: right;
+    width: 130px;
+    max-width: 150px;
+    margin: 10px;
+}
