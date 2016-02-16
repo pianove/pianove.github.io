@@ -54,6 +54,12 @@
   }
 }
 
+@media screen and (max-width: 502px) {
+    .qrcode {
+        display: none;
+    }
+}
+
 /* For screens such as mobile phones*/
 @media screen and (max-width: 414px) {
   .header-logo {
@@ -88,8 +94,6 @@
   }
   h4.contact-title {
     width: 100%;
-    margin: 1em auto;
-    text-align: center;
     font-size: 18px;
   }
   .social-btn {
@@ -117,6 +121,9 @@
 
     .qrcode {
     display: none;
+    }
+    .break{
+        display: block;
     }
 }
 

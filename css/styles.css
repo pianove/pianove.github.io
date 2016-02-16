@@ -4,16 +4,42 @@ body {
   max-width: 100%;
   margin: 15px;
   color: #333333;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-a, a:hover, a:active, a:focus {
+.fadein {
+  opacity: 0;
+  -moz-transition: opacity 3.5s ease;
+  -webkit-transition: opacity 3.5s ease;
+  -o-transition: opacity 3.5s ease;
+  transition: opacity 3.5s ease;
+}
+
+.easein.loaded{
+  transform: translateY(371px);
+  -moz-transition: 3.5s ease;
+  -webkit-transition: 3.5s ease;
+  -o-transition: 3.5s ease;
+  transition: 3.5s ease;
+}
+.fadein.loaded {
+  opacity: 1;
+}
+
+/*.hidden{
+    visibility: hidden;
+}*/
+
+a,
+a:hover,
+a:active,
+a:focus {
     outline: none;
     color: orange;
     text-decoration: none;
 }
 
-a{
+a {
     color: orange;
 }
 .header{
@@ -22,7 +48,18 @@ a{
 .header img {
     max-width: 33.3333%;
     display: inline-block;
+    position: absolute;
+    top: -340px;
 }
+.header .mylogo-container{
+    max-width: 33.3333%;
+    display: inline-block;
+    position: absolute;
+/*    top: -340px;*/
+/*    top: -445px;*/
+    top: -516px;
+}
+
 
 .header a {
     float: right;
@@ -52,6 +89,7 @@ a{
 a.social-btn {
   text-transform: none;
   font-size: 14px;
+  color: grey;
 }
 .social-btn:focus, .social-btn:hover {
     text-decoration: none;
@@ -205,12 +243,18 @@ ul.card {
     margin: 0 10px 15px;
 }
 
-h4.contact-title {
+.contact-title {
     text-align: left;
-    margin: 2em;
+    margin: 0 0 10px 25px;
+    width: 90%;
+}
+h4.contact-title {
+    margin: 10px 0 2em 25px;
     letter-spacing: 2px;
-    width: 60%;
 
+}
+p.contact-title {
+    font-size: 16px;
 }
 
 img.contact-title {
@@ -232,7 +276,7 @@ img.card {
     display: block;
     margin-left: 1em;
     width: 60%;
-    padding-top: 1em;
+    padding-top: 25px;
 }
 
 .contact.card {
@@ -246,6 +290,7 @@ img.card {
     margin: auto;
     padding: 10px;
     background-color: white;
+    color: grey;
 }
 
 .card {
@@ -253,6 +298,7 @@ img.card {
     font-size: 20px;
     line-height: 19px;
     background-color: white;
+
 }
 
 .end {
@@ -266,7 +312,13 @@ img.card {
 
 .qrcode {
     float: right;
-    width: 130px;
+/*    width: 130px;*/
     max-width: 150px;
     margin: 10px;
 }
+
+.break {
+    display: none;
+}
+
+
