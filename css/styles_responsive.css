@@ -2,12 +2,45 @@
 * These are the responsive styles.
 */
 
-@media screen and (max-width: 1268px){
+@media screen and (max-width: 1280px){
+  .header p {
+    margin: 18px 0px 20px;
+    font-size: 20px;
+  }
+
+  .header .mylogo-container {
+        top: -536px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+   .header .mylogo-container {
+        top: -502px;
+  }
+
   .header p {
     margin: 12px 0px;
     font-size: 20px;
   }
+
+  .img-info-right {
+    width: 60%;
+    float: right;
+    padding: 0 1em;
+    text-align: left;
+ }
+ .img-info-left {
+    width: 33.3333%;
+    float: left;
+    padding: 0 1em;
+    text-align: left;
+ }
+
+ .img-info {
+        top: 20%;
+ }
 }
+
 /* For medium screens such as Ipad, Tablet, etc. */
 @media screen and (max-width: 992px){
   .header-logo {
@@ -20,6 +53,10 @@
     position: relative;
     width: 66.66%;
     float: left;
+  }
+
+  .header .mylogo-container {
+        top: -494px;
   }
 
   h1 {
@@ -52,6 +89,43 @@
   h1 {
     font-size: 30px;
   }
+  .header .mylogo-container {
+        top: -470px;
+  }
+}
+
+
+@media screen and (max-width: 736px) {
+    .header .mylogo-container {
+        top: -464px;
+  }
+    .footer p {
+    font-size: 14px;
+}
+}
+
+@media screen and (max-width: 690px) {
+    .header .mylogo-container {
+        top: -456px;
+  }
+}
+
+@media screen and (max-width: 667px) {
+    .header .mylogo-container {
+        top: -452px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .header .mylogo-container {
+        top: -445px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+    .header .mylogo-container {
+        top: -436px;
+  }
 }
 
 @media screen and (max-width: 502px) {
@@ -60,8 +134,46 @@
     }
 }
 
+@media screen and (min-width: 480px){
+
+    .footer-left,
+    .footer-right{
+        width: 50%;
+    }
+
+    .footer-left {
+        text-align: left;
+    }
+
+    .footer-right {
+        float: right;
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header .mylogo-container {
+        top: -425px;
+  }
+     .img-info-left,
+    .img-info-right {
+        width: 100%;
+    }
+    .img-info ul {
+    width: 30%;
+    margin: auto 20%;
+    }
+}
+
+
 /* For screens such as mobile phones*/
 @media screen and (max-width: 414px) {
+
+  .header .mylogo-container {
+        max-width: 60%;
+        top: -465px;
+  }
+
   .header-logo {
     display: none;
   }
@@ -107,6 +219,10 @@
     margin: 12px 0px;
     font-size: 16px;
   }
+
+  .footer {
+    text-align: center !important;
+  }
 }
 
 @media screen and (max-width: 380px) {
@@ -125,9 +241,18 @@
     .break{
         display: block;
     }
+    .header .mylogo-container {
+        max-width: 60%;
+        top: -455px;
+    }
 }
 
 @media screen and (max-width: 320px) {
+    .header .mylogo-container {
+        max-width: 60%;
+        top: -442px;
+    }
+
     .header p{
         margin: 6px 0px;
         font-size: 16px;
@@ -137,10 +262,16 @@
     max-width: 66.6666%;
     }
 
+    .img-info {
+        top: 10%;
+    }
+
     .qrcode {
     display: none;
     }
 }
+
+
 
 
 
