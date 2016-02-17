@@ -2,35 +2,52 @@
 * These are the responsive styles.
 */
 
-/* For small screens such as mobile phones*/
-
-@media screen and (max-width: 400px) {
-  .header-logo {
-    display: none;
+@media screen and (max-width: 1366px){
+  .header .mylogo-container {
+        top: -540px;
   }
-
-  .header-title,
-  h1,
-  h3,
-  h4 {
+}
+@media screen and (max-width: 1280px){
+  .header p {
+    margin: 18px 0px 20px;
     font-size: 20px;
-    text-align: center;
   }
 
-  .title-super {
+  .header .mylogo-container {
+        top: -536px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+   .header .mylogo-container {
+        top: -502px;
+  }
+
+  .header p {
+    margin: 12px 0px;
     font-size: 20px;
-    text-align: center;
   }
 
- .img-info h1,
- .img-info h3{
-    font-size: 16px !important;
-  }
+  .img-info-right {
+    width: 60%;
+    float: right;
+    padding: 0 1em;
+    text-align: left;
+ }
+ .img-info-left {
+    width: 33.3333%;
+    float: left;
+    padding: 0 1em;
+    text-align: left;
+ }
 
+ .img-info {
+        top: 20%;
+ }
 }
 
 /* For medium screens such as Ipad, Tablet, etc. */
-@media screen and (min-width: 401px) and (max-width: 992px){
+@media screen and (max-width: 992px){
   .header-logo {
     position: relative;
     width: 33.33%;
@@ -41,6 +58,10 @@
     position: relative;
     width: 66.66%;
     float: left;
+  }
+
+  .header .mylogo-container {
+        top: -494px;
   }
 
   h1 {
@@ -63,3 +84,199 @@
     float: left;
   }
 }
+
+@media screen and (max-width: 768px){
+  .header p {
+    margin: 4px 0px;
+    font-size: 20px;
+  }
+  .title-super,
+  h1 {
+    font-size: 30px;
+  }
+  .header .mylogo-container {
+        top: -470px;
+  }
+}
+
+
+@media screen and (max-width: 736px) {
+    .header .mylogo-container {
+        top: -464px;
+  }
+    .footer p {
+    font-size: 14px;
+}
+}
+
+@media screen and (max-width: 690px) {
+    .header .mylogo-container {
+        top: -456px;
+  }
+}
+
+@media screen and (max-width: 667px) {
+    .header .mylogo-container {
+        top: -452px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .header .mylogo-container {
+        top: -445px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+    .header .mylogo-container {
+        top: -436px;
+  }
+}
+
+@media screen and (max-width: 502px) {
+    .qrcode {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 480px){
+
+    .footer-left,
+    .footer-right{
+        width: 50%;
+    }
+
+    .footer-left {
+        text-align: left;
+    }
+
+    .footer-right {
+        float: right;
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header .mylogo-container {
+        top: -425px;
+  }
+    .img-info-left,
+    .img-info-right {
+        width: 100%;
+    }
+    .img-info ul {
+    width: 30%;
+    margin: auto 20%;
+    }
+}
+
+
+/* For screens such as mobile phones*/
+@media screen and (max-width: 414px) {
+
+  .header .mylogo-container {
+        max-width: 60%;
+        top: -465px;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .header-title,
+  h1,
+  h3,
+  h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .title-super {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .img-info h1,
+  .img-info h3{
+    font-size: 16px !important;
+  }
+  .qrcode {
+    display: none;
+  }
+  .contact.card {
+    box-shadow: none;
+  }
+  img.card {
+    width: 95%;
+  }
+  h4.contact-title {
+    width: 100%;
+    font-size: 18px;
+  }
+  .social-btn {
+    width: auto;
+  }
+
+  .header img {
+    max-width: 66.6666%;
+  }
+  .header p {
+    margin: 12px 0px;
+    font-size: 16px;
+  }
+
+  .footer {
+    text-align: center !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+    .header p{
+        margin: 10px 0px;
+        font-size: 16px;
+    }
+
+    .header img {
+    max-width: 66.6666%;
+    }
+
+    .qrcode {
+    display: none;
+    }
+    .break{
+        display: block;
+    }
+    .header .mylogo-container {
+        max-width: 60%;
+        top: -455px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header .mylogo-container {
+        max-width: 60%;
+        top: -442px;
+    }
+
+    .header p{
+        margin: 6px 0px;
+        font-size: 16px;
+    }
+
+    .header img {
+    max-width: 66.6666%;
+    }
+
+    .img-info {
+        top: 10%;
+    }
+
+    .qrcode {
+    display: none;
+    }
+}
+
+
+
+
+
