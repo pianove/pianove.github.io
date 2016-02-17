@@ -53,9 +53,10 @@ a {
 }
 .header img {
     max-width: 33.3333%;
-    display: inline-block;
+/*    display: inline-block;*/
     position: absolute;
-    top: -340px;
+    top: -360px;
+    display: none;
 }
 .header .mylogo-container{
     max-width: 33.3333%;

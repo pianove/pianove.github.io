@@ -107,6 +107,12 @@
     .footer p {
     font-size: 14px;
 }
+    .header video {
+        display: none;
+    }
+    .header img {
+        display: inline-block;
+    }
 }
 
 @media screen and (max-width: 690px) {
@@ -219,6 +225,7 @@
 
   .header img {
     max-width: 66.6666%;
+    top: -368px;
   }
   .header p {
     margin: 12px 0px;
