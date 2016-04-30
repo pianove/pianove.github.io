@@ -407,3 +407,8 @@ img.card {
     padding: 0 2em;
     text-align: left;
 }
+
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+user-select: none;
